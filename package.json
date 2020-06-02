@@ -18,9 +18,19 @@
     "@babel/preset-typescript": "7.10.1",
     "@types/jest": "25.2.3",
     "babel-jest": "26.0.1",
+    "husky": "4.2.5",
     "jest": "26.0.1",
+    "lint-staged": "10.2.7",
     "make-coverage-badge": "1.2.0",
     "prettier": "2.0.5",
     "typescript": "3.9.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm run test:coverage && npm run coverage"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,css,md}": "prettier --write"
   }
 }
