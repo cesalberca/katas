@@ -46,11 +46,12 @@ You can tackle the Katas in whatever order you may choose. The order specified h
 ## Development
 
 1. Install [NodeJS](https://nodejs.org/en/)
-2. Clone project `git clone https://github.com/cesalberca/katas.git`
-3. cd into it `cd katas`
-4. Install dependencies `npm i`
-5. Run tests `npm test:watch`
-6. Code!
+2. Fork project
+3. Clone your project `git clone https://github.com/cesalberca/katas.git`
+4. cd into it `cd katas`
+5. Install dependencies `npm i`
+6. Run tests `npm test:watch`
+7. Code!
 
 ## Workflow
 
