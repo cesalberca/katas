@@ -3,7 +3,7 @@
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/cesalberca/katas/CI)
 ![David](https://img.shields.io/david/dev/cesalberca/katas)
 ![GitHub](https://img.shields.io/github/license/cesalberca/katas)
-![Coverage](coverage/badge.svg)
+![Coverage](coverage-badge.svg)
 
 JavaScript/TypeScript Katas you can use to hone your skills as a developer! Try and follow [TDD](https://en.wikipedia.org/wiki/Test-driven_development) by doing the tests first and then implement the functionality to make that test pass.
 

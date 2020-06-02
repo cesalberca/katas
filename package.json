@@ -5,7 +5,7 @@
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "coverage": "make-coverage-badge"
+    "coverage": "make-coverage-badge --output-path coverage-badge.svg"
   },
   "keywords": [],
   "author": "César Alberca <cesalberca@gmail.com>",
