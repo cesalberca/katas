@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Katas",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "coverage": "make-coverage-badge"
   },
   "keywords": [],
   "author": "César Alberca <cesalberca@gmail.com>",
@@ -17,6 +19,7 @@
     "@types/jest": "25.2.3",
     "babel-jest": "26.0.1",
     "jest": "26.0.1",
+    "make-coverage-badge": "1.2.0",
     "prettier": "2.0.5",
     "typescript": "3.9.3"
   }
