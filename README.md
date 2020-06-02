@@ -25,6 +25,10 @@ JavaScript/TypeScript Katas you can use to hone your skills as a developer! Try 
 
 ## Katas
 
+I recommend that you create a file with `<YOUR_USERNAME>.<NAME_OF_KATA>.ts` and `<YOUR_USERNAME>.<NAME_OF_KATA>.spec.ts` for the test. Only if you find yourself stuck you might check the answer.
+
+You can tackle the Katas in whatever order you may choose. The order specified here has more to do with difficulty of the Kata.
+
 - [Highest number](highest-number/README.md)
 - [Power of two](power-of-two/README.md)
 - [Add all numbers](add-all-numbers/README.md)
@@ -33,7 +37,7 @@ JavaScript/TypeScript Katas you can use to hone your skills as a developer! Try 
 - [Fizz buzz](fizz-buzz/README.md)
 - [Calculator](calculator/README.md)
 - [Prime numbers](prime-numbers/README.md)
-- [Caesar's cypher](caeser/README.md)
+- [Caesar's cypher](caesar/README.md)
 - [Change calculator](change-calculator/README.md)
 - [Word wrap](word-wrap/README.md)
 - [99 bottles](99-bottles/README.md)
@@ -50,9 +54,9 @@ JavaScript/TypeScript Katas you can use to hone your skills as a developer! Try 
 
 ## Workflow
 
-Always start with the tests. Think about a ~~good~~ great name test and start with the `expect`. For instance, lets think about a functionality that gives us the highest number of an array.
+Always start with the tests. Think about a ~~good~~ great test name and start with the `expect`. For instance, lets think about a functionality that gives us the highest number of an array.
 
-A first test could be:
+We create the file `<YOUR_USERNAME>.<NAME_OF_KATA>.spec.ts` in `highest-number/solutions` A first test could be:
 
 ```typescript
 describe('getHighestNumber', () => {
@@ -80,7 +84,7 @@ describe('getHighestNumber', () => {
 })
 ```
 
-Time to implement the function `getHighestNumber`:
+Time to implement the function `getHighestNumber` inside a file we create in `highest-number/solutions` named `<YOUR_USERNAME>.<NAME_OF_KATA>.ts`:
 
 ```typescript
 export function getHighestNumber(numbers: number[]): number {
