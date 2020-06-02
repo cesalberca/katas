@@ -1,0 +1,23 @@
+{
+  "name": "katas",
+  "version": "1.0.0",
+  "description": "Katas",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "César Alberca <cesalberca@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.10.2",
+    "@babel/plugin-proposal-class-properties": "7.10.1",
+    "@babel/plugin-proposal-private-methods": "7.10.1",
+    "@babel/preset-env": "7.10.2",
+    "@babel/preset-typescript": "7.10.1",
+    "@types/jest": "25.2.3",
+    "babel-jest": "26.0.1",
+    "jest": "26.0.1",
+    "prettier": "2.0.5",
+    "typescript": "3.9.3"
+  }
+}
