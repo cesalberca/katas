@@ -1,5 +1,6 @@
 # Katas
 
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/cesalberca/katas/CI)
 ![David](https://img.shields.io/david/dev/cesalberca/katas)
 ![GitHub](https://img.shields.io/github/license/cesalberca/katas)
 ![Coverage](coverage/badge.svg)
