@@ -4,7 +4,8 @@
   "description": "Katas",
   "scripts": {
     "test": "jest",
-    "coverage": "jest --coverage && make-coverage-badge --output-path coverage-badge.svg"
+    "coverage": "jest --coverage && make-coverage-badge --output-path coverage-badge.svg",
+    "toc": "doctoc README.md --github --title \"**Table of Contents**\""
   },
   "keywords": [],
   "author": "César Alberca <cesalberca@gmail.com>",
@@ -17,6 +18,7 @@
     "@babel/preset-typescript": "7.10.1",
     "@types/jest": "25.2.3",
     "babel-jest": "26.0.1",
+    "doctoc": "1.4.0",
     "husky": "4.2.5",
     "jest": "26.0.1",
     "lint-staged": "10.2.7",
@@ -30,6 +32,6 @@
     }
   },
   "lint-staged": {
-    "*.{ts,css,md}": "prettier --write && npm run coverage"
+    "*.{ts,css,md}": "prettier --write"
   }
 }
