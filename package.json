@@ -4,8 +4,7 @@
   "description": "Katas",
   "scripts": {
     "test": "jest",
-    "test:coverage": "jest --coverage",
-    "coverage": "make-coverage-badge --output-path coverage-badge.svg"
+    "coverage": "jest --coverage && make-coverage-badge --output-path coverage-badge.svg"
   },
   "keywords": [],
   "author": "César Alberca <cesalberca@gmail.com>",
@@ -27,10 +26,10 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && npm run test:coverage && npm run coverage"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "*.{ts,css,md}": "prettier --write"
+    "*.{ts,css,md}": "prettier --write && npm run coverage"
   }
 }
