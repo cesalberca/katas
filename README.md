@@ -1,5 +1,8 @@
 # Katas
 
+![David](https://img.shields.io/david/dev/cesalberca/katas)
+![GitHub](https://img.shields.io/github/license/cesalberca/katas)
+
 JavaScript/TypeScript Katas you can use to hone your skills as a developer! Try and follow [TDD](https://en.wikipedia.org/wiki/Test-driven_development) by doing the tests first and then implement the functionality to make that test pass.
 
 1. Fizz buzz
