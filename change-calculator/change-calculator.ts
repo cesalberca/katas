@@ -1,5 +1,5 @@
 export class ChangeCalculator {
-  #moneyAmounts = new Map<number, number>([
+  private moneyAmounts = new Map<number, number>([
     [500, 1],
     [200, 1],
     [100, 1],
@@ -12,14 +12,14 @@ export class ChangeCalculator {
   ])
 
   calculate(money: number, result: number[] = []): number[] {
-    const moneyAmount = this.#moneyAmounts.get(money)
-    const amounts = Array.from(this.#moneyAmounts)
+    const moneyAmount = this.moneyAmounts.get(money)
+    const amounts = Array.from(this.moneyAmounts)
     const [immediateBelowMoneyAmount, immediateBelowMoneyQuantity] = amounts.find(
       ([amount, quantity]) => amount <= money && quantity > 0
     ) ?? [0, 0]
 
     result.push(immediateBelowMoneyAmount)
-    this.#moneyAmounts.set(immediateBelowMoneyAmount, immediateBelowMoneyQuantity - 1)
+    this.moneyAmounts.set(immediateBelowMoneyAmount, immediateBelowMoneyQuantity - 1)
 
     if (moneyAmount !== undefined && moneyAmount !== 0) {
       return result
@@ -29,6 +29,6 @@ export class ChangeCalculator {
   }
 
   configureAmounts(newAmounts: Map<number, number>) {
-    this.#moneyAmounts = newAmounts
+    this.moneyAmounts = newAmounts
   }
 }

@@ -1,12 +1,12 @@
 export class Calculator {
   calculate(string: string): number {
     const cleanString = string.replace(/ /g, '')
-    const sequence = this.#getSequence(cleanString)
+    const sequence = this.getSequence(cleanString)
     const numbers = sequence.map(Number)
     return numbers.reduce((result, value) => result + value, 0)
   }
 
-  #getSequence(string: string) {
+  private getSequence(string: string) {
     let signedStringifiedNumber = ''
     const sequence = []
 
