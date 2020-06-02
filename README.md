@@ -11,14 +11,8 @@
 
 **Table of Contents**
 
-- [Fizz buzz](#fizz-buzz)
-- [Calculator](#calculator)
-- [Primer numbers](#primer-numbers)
-- [Word wrap](#word-wrap)
-- [Change calculator](#change-calculator)
-- [Ceaser's cypher](#ceasers-cypher)
-- [99 bottles](#99-bottles)
-- [99 bottles OOP](#99-bottles-oop)
+- [Introduction](#introduction)
+- [Katas](#katas)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -30,9 +24,99 @@ JavaScript/TypeScript Katas you can use to hone your skills as a developer! Try 
 
 - [Fizz buzz](fizz-buzz/README.md)
 - [Calculator](calculator/README.md)
-- [Primer numbers](primer-numbers/README.md)
+- [Prime numbers](prime-numbers/README.md)
 - [Word wrap](word-wrap/README.md)
 - [Change calculator](change-calculator/README.md)
-- [Ceaser's cypher](ceaser/README.md)
+- [Caesar's cypher](caeser/README.md)
 - [99 bottles](99-bottles/README.md)
 - [99 bottles OOP](99-bottles-oop/README.md)
+
+## Development
+
+1. Install [NodeJS](https://nodejs.org/en/)
+2. Clone project `git clone https://github.com/cesalberca/katas.git`
+3. cd into it `cd katas`
+4. Run tests `npm test:watch`
+5. Code!
+
+## Workflow
+
+Always start with the tests. Think about a ~~good~~ great name test and start with the expect. For instance, lets think about a functionality that gives us the highest number of an array.
+
+A first test could be:
+
+```typescript
+describe('getHighestNumber', () => {
+  it('should get the highest number given an array of one number', () => {
+    expect(actual).toBe(42)
+  })
+})
+```
+
+Notice that the isn't even an actual declared. Thinking about the expect first let us focus on the functionality and the assertion that we want to make.
+
+Now let's finish the test:
+
+```typescript
+import { getHighestNumber } from './highest-number'
+
+describe('getHighestNumber', () => {
+  it('should get the highest number given an array of one number', () => {
+    const given = [42]
+
+    const actual = getHighestNumber(given)
+
+    expect(actual).toBe(42)
+  })
+})
+```
+
+Time to implement the function `getHighestNumber`:
+
+```typescript
+export function getHighestNumber(numbers: number[]): number {
+  return numbers[0]
+}
+```
+
+Perfect! The test passes! Now it's a perfect time to make a commit.
+
+Now, you might think this is utterly incomplete, right? Well, _it depends_, if all the arrays we received were of one position this function will be perfect. What we should do now, is add another test that makes our assumptions incorrect. And that's what we are going to do:
+
+```typescript
+it('should get the highest number given an array of several numbers', () => {
+  const given = [1, 3, 2]
+
+  const actual = getHighestNumber(given)
+
+  expect(actual).toBe(3)
+})
+```
+
+Because we have the previous test, whenever we change the functionality we should run the tests in order to make sure we didn't break the previous functionality:
+
+```typescript
+export function getHighestNumber(numbers: number[]): number {
+  let highestNumber = numbers[0]
+
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > highestNumber) {
+      highestNumber = numbers[i]
+    }
+  }
+
+  return highestNumber
+}
+```
+
+Great! Time to commit again. However, we can always improve our code without changin it's functionality. That's what we call **refactoring**. Let's just do that:
+
+```typescript
+export function getHighestNumber(numbers: number[]): number {
+  return numbers.slice().sort()[numbers.length - 1]
+}
+```
+
+If we run the tests they should still be green!
+
+_Note: We did a slice before sort because sort mutates the original array and we don't want that._

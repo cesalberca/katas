@@ -4,6 +4,7 @@
   "description": "Katas",
   "scripts": {
     "test": "jest",
+    "test:watch": "jest --watchAll",
     "coverage": "jest --coverage && make-coverage-badge --output-path coverage-badge.svg",
     "toc": "doctoc README.md --github --title \"**Table of Contents**\""
   },

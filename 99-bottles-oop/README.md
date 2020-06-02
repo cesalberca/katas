@@ -1,9 +1,10 @@
 # 99 bottles
 
-Make a program that given a verse return that verse. It can also sing from a given verse down to another given verse. It can also sing from a given verse down to verse 0. Try and find an Object Oriented Programming solution. 
+Make a program that given a verse return that verse. It can also sing from a given verse down to another given verse. It can also sing from a given verse down to verse 0. Try and find an Object Oriented Programming solution.
 
-## Song
+The song is as follows:
 
+```
 99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 
@@ -303,3 +304,4 @@ Take it down and pass it around, no more bottles of beer on the wall.
 
 No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
+```

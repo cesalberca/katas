@@ -8,6 +8,6 @@ If the shift is initially 1, the first character of the message to be encoded wi
 
 u = "I should have known that you would have a perfect answer for me!!!"
 
-movingShift(u, 1) returns :
+movingShift(u, 1) returns:
 
 v = ["J vltasl rlhr ", "zdfog odxr ypw", " atasl rlhr p ", "gwkzzyq zntyhv", " lvz wp!!!"]

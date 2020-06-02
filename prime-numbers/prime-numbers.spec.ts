@@ -1,6 +1,6 @@
-import { PrimeNumbersFactorer } from './primer-numbers'
+import { PrimeNumbersFactorer } from './prime-numbers'
 
-describe('DecomposePrimeNumbers', () => {
+describe('PrimeNumbersFactorer', () => {
   it('should factor a number into prime numbers', () => {
     const given = 6
     const primeNumbersFactorer = new PrimeNumbersFactorer()
