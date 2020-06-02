@@ -19,7 +19,7 @@ jobs:
       - name: install
         run: npm ci
       - name: test
-        run: npm test:coverage
+        run: npm run test:coverage
       - name: coverage
         run: npm coverage
 
