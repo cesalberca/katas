@@ -34,6 +34,7 @@ You can tackle the Katas in whatever order you may choose. The order specified h
 - [Add all numbers](add-all-numbers/README.md)
 - [Filter even numbers](filter-even-numbers/README.md)
 - [Alphabetical](alphabetical/README.md)
+- [Fruit counter](fruit-counter/README.md)
 - [Fizz buzz](fizz-buzz/README.md)
 - [Calculator](calculator/README.md)
 - [Prime numbers](prime-numbers/README.md)
