@@ -10,10 +10,10 @@ describe('getHighestNumber', () => {
   })
 
   it('should get the highest number given an array of several numbers', () => {
-    const given = [1, 3, 2]
+    const given = [1, 10, 3]
 
     const actual = getHighestNumber(given)
 
-    expect(actual).toBe(3)
+    expect(actual).toBe(10)
   })
 })

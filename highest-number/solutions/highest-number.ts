@@ -1,3 +1,3 @@
 export function getHighestNumber(numbers: number[]): number {
-  return numbers.slice().sort()[numbers.length - 1]
+  return numbers.reduce((acc: number, value: number) => (value > acc ? value : acc))
 }
