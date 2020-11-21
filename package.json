@@ -2,6 +2,7 @@
   "name": "katas",
   "version": "1.0.0",
   "description": "Katas",
+  "repository": "https://github.com/cesalberca/katas",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watchAll",
