@@ -32,6 +32,7 @@ You can tackle the Katas in whatever order you may choose. The order specified h
 - [Highest number](highest-number/README.md)
 - [Power of two](power-of-two/README.md)
 - [Add all numbers](add-all-numbers/README.md)
+- [forEach](for-each/README.md)
 - [Filter even numbers](filter-even-numbers/README.md)
 - [Alphabetical](alphabetical/README.md)
 - [Fruit counter](fruit-counter/README.md)
@@ -45,15 +46,19 @@ You can tackle the Katas in whatever order you may choose. The order specified h
 - [99 bottles](99-bottles/README.md)
 - [99 bottles OOP](99-bottles-oop/README.md)
 
-## Development
+## Setup
 
 1. Fork project
 2. Clone your project `git clone https://github.com/<YOUR_USER>/katas.git`
-3. Install [NodeJS](https://nodejs.org/en/)
-4. cd into it `cd katas`
-5. Install dependencies `npm i`
-6. Run tests once with `npm test` (or constantly with `npm run test:watch`)
-7. Code!
+3. Create a branch from `main` where you'll work, `dev` for example.
+4. Track remote upstream branch: `git remote add upstream https://github.com/cesalberca/katas.git`.
+5. To update changes from upstream: `git pull upstream main`.
+6. To propose changes you have to go to `main` branch, make a new branch from it, commit changes and then, on Github, make a Pull request from `<YOUR_BRANCH>` to `main`. If you want to bring a single commit from your dev branch you can use [cherry-pick](https://git-scm.com/docs/git-cherry-pick).
+7. Install [NodeJS](https://nodejs.org/en/)
+8. cd into it `cd katas`
+9. Install dependencies `npm i`
+10. Run tests once with `npm test` (or constantly with `npm run test:watch`)
+11. Code!
 
 ## Workflow
 
