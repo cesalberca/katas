@@ -48,17 +48,17 @@ You can tackle the Katas in whatever order you may choose. The order specified h
 
 ## Setup
 
-1. Fork project
+1. [Fork project on Github](https://github.com/cesalberca/katas.git)
 2. Clone your project `git clone https://github.com/<YOUR_USER>/katas.git`
 3. Create a branch from `main` where you'll work, `dev` for example.
 4. Track remote upstream branch: `git remote add upstream https://github.com/cesalberca/katas.git`.
 5. To update changes from upstream: `git pull upstream main`.
 6. To propose changes you have to go to `main` branch, make a new branch from it, commit changes and then, on Github, make a Pull request from `<YOUR_BRANCH>` to `main`. If you want to bring a single commit from your dev branch you can use [cherry-pick](https://git-scm.com/docs/git-cherry-pick).
 7. Install [NodeJS](https://nodejs.org/en/)
-8. cd into it `cd katas`
-9. Install dependencies `npm i`
-10. Run tests once with `npm test` (or constantly with `npm run test:watch`)
-11. Code!
+8. cd into it `cd katas`.
+9. Install dependencies `npm i`.
+10. Run tests once with `npm test` (or constantly with `npm run test:watch`).
+11. Code your solutions inside the directories `my-solutions`.
 
 ## Workflow
 
