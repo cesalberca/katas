@@ -25,7 +25,7 @@ JavaScript/TypeScript Katas you can use to hone your skills as a developer! Try 
 
 ## Katas
 
-I recommend that you create a file with `<YOUR_USERNAME>.<NAME_OF_KATA>.ts` and `<YOUR_USERNAME>.<NAME_OF_KATA>.spec.ts` for the test. Only if you find yourself stuck you might check the answer.
+I recommend that you create a file with `<NAME>.<KATA>.ts` and `<NAME>.<KATA>.spec.ts` for the test, where `<NAME>` is the main characteristic of the Kata and `<NAME>` is the name of the Kata. Only if you find yourself stuck you might check the answer.
 
 You can tackle the Katas in whatever order you may choose. The order specified here has more to do with difficulty of the Kata.
 
@@ -47,19 +47,19 @@ You can tackle the Katas in whatever order you may choose. The order specified h
 
 ## Development
 
-1. Install [NodeJS](https://nodejs.org/en/)
-2. Fork project
-3. Clone your project `git clone https://github.com/cesalberca/katas.git`
+1. Fork project
+2. Clone your project `git clone https://github.com/<YOUR_USER>/katas.git`
+3. Install [NodeJS](https://nodejs.org/en/)
 4. cd into it `cd katas`
 5. Install dependencies `npm i`
-6. Run tests `npm test:watch`
+6. Run tests once with `npm test` (or constantly with `npm run test:watch`)
 7. Code!
 
 ## Workflow
 
 Always start with the tests. Think about a ~~good~~ great test name and start with the `expect`. For instance, lets think about a functionality that gives us the highest number of an array.
 
-We create the file `<YOUR_USERNAME>.<NAME_OF_KATA>.spec.ts` in `highest-number/solutions` A first test could be:
+We create the file `<NAME>.<KATA>.spec.ts` in `highest-number/solutions` A first test could be:
 
 ```typescript
 describe('getHighestNumber', () => {
@@ -87,7 +87,7 @@ describe('getHighestNumber', () => {
 })
 ```
 
-Time to implement the function `getHighestNumber` inside a file we create in `highest-number/solutions` named `<YOUR_USERNAME>.<NAME_OF_KATA>.ts`:
+Time to implement the function `getHighestNumber` inside a file we create in `highest-number/solutions` named `<NAME>.<KATA>.ts`:
 
 ```typescript
 export function getHighestNumber(numbers: number[]): number {
@@ -141,4 +141,4 @@ _Note: We did a slice before sort because sort mutates the original array and we
 
 ## Contributing
 
-If you have an interesting solution create a PR to this project with the name of the file like this: `<YOUR_USERNAME>.<NAME_OF_KATA>.ts`.
+If you have an interesting solution create a PR to this project with the name of the file like this: `<NAME>.<KATA>.ts`.
