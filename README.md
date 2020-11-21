@@ -64,7 +64,7 @@ You can tackle the Katas in whatever order you may choose. The order specified h
 
 Always start with the tests. Think about a ~~good~~ great test name and start with the `expect`. For instance, lets think about a functionality that gives us the highest number of an array.
 
-We create the file `<NAME>.<KATA>.spec.ts` in `highest-number/solutions` A first test could be:
+We create the file `<NAME>.<KATA>.spec.ts` in `highest-number/solutions`. A first test could be:
 
 ```typescript
 describe('getHighestNumber', () => {
