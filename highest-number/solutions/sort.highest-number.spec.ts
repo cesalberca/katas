@@ -1,4 +1,4 @@
-import { getHighestNumber } from './highest-number'
+import { getHighestNumber } from './sort.highest-number'
 
 describe('getHighestNumber', () => {
   it('should get the highest number given an array of one number', () => {
