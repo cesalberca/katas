@@ -3,15 +3,20 @@ export function fizzBuzz(number: number) {
   for (let i = 1; i <= number; i++) {
     const isDivisibleByThree = i % 3 === 0
     const isDivisibleByFive = i % 5 === 0
-    if (isDivisibleByThree && isDivisibleByFive) {
-      list.push('fizzbuzz')
-    } else if (isDivisibleByFive) {
-      list.push('buzz')
-    } else if (isDivisibleByThree) {
-      list.push('fizz')
-    } else {
-      list.push(i)
+    let value: number | string = ''
+    if (isDivisibleByThree) {
+      value += 'fizz'
     }
+    if (isDivisibleByFive) {
+      value += 'buzz'
+    }
+
+    if (value === '') {
+      value = i
+    }
+
+    list.push(value)
   }
+
   return list
 }
