@@ -34,7 +34,7 @@ You can tackle the Katas in whatever order you may choose. The order specified h
 - [Add all numbers](add-all-numbers/README.md)
 - [forEach](for-each/README.md)
 - [Filter even numbers](filter-even-numbers/README.md)
-- [Copy](copy/README.md)
+- [Flat](flat/README.md)
 - [Alphabetical](alphabetical/README.md)
 - [Fruit counter](fruit-counter/README.md)
 - [Grouper](grouper/README.md)
