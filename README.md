@@ -11,11 +11,11 @@
 
 **Table of Contents**
 
-- [Introduction](#introduction)
-- [Katas](#katas)
-- [Development](#development)
-- [Workflow](#workflow)
-- [Contributing](#contributing)
+-   [Introduction](#introduction)
+-   [Katas](#katas)
+-   [Development](#development)
+-   [Workflow](#workflow)
+-   [Contributing](#contributing)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -29,23 +29,22 @@ I recommend that you create a file with `<NAME>.<KATA>.ts` and `<NAME>.<KATA>.sp
 
 You can tackle the Katas in whatever order you may choose. The order specified here has more to do with difficulty of the Kata.
 
-- [Highest number](highest-number/README.md)
-- [Power of two](power-of-two/README.md)
-- [Add all numbers](add-all-numbers/README.md)
-- [forEach](for-each/README.md)
-- [Filter even numbers](filter-even-numbers/README.md)
-- [Flat](flat/README.md)
-- [Alphabetical](alphabetical/README.md)
-- [Fruit counter](fruit-counter/README.md)
-- [Grouper](grouper/README.md)
-- [Fizz buzz](fizz-buzz/README.md)
-- [Calculator](calculator/README.md)
-- [Prime numbers](prime-numbers/README.md)
-- [Caesar's cypher](caesar/README.md)
-- [Change calculator](change-calculator/README.md)
-- [Word wrap](word-wrap/README.md)
-- [99 bottles](99-bottles/README.md)
-- [99 bottles OOP](99-bottles-oop/README.md)
+-   [Highest number](highest-number/README.md)
+-   [Power of two](power-of-two/README.md)
+-   [Add all numbers](add-all-numbers/README.md)
+-   [forEach](for-each/README.md)
+-   [Filter even numbers](filter-even-numbers/README.md)
+-   [Flat](flat/README.md)
+-   [Alphabetical](alphabetical/README.md)
+-   [Fruit counter](fruit-counter/README.md)
+-   [Grouper](grouper/README.md)
+-   [Fizz buzz](fizz-buzz/README.md)
+-   [Calculator](calculator/README.md)
+-   [Prime numbers](prime-numbers/README.md)
+-   [Caesar's cypher](caesar/README.md)
+-   [Change calculator](change-calculator/README.md)
+-   [Word wrap](word-wrap/README.md)
+-   [99 bottles](99-bottles/README.md)
 
 ## Setup
 
@@ -69,9 +68,9 @@ We create the file `<NAME>.<KATA>.spec.ts` in `highest-number/solutions`. A firs
 
 ```typescript
 describe('getHighestNumber', () => {
-  it('should get the highest number given an array of one number', () => {
-    expect(actual).toBe(42)
-  })
+    it('should get the highest number given an array of one number', () => {
+        expect(actual).toBe(42)
+    })
 })
 ```
 
@@ -83,13 +82,13 @@ Now let's finish the test:
 import { getHighestNumber } from './highest-number'
 
 describe('getHighestNumber', () => {
-  it('should get the highest number given an array of one number', () => {
-    const given = [42]
+    it('should get the highest number given an array of one number', () => {
+        const given = [42]
 
-    const actual = getHighestNumber(given)
+        const actual = getHighestNumber(given)
 
-    expect(actual).toBe(42)
-  })
+        expect(actual).toBe(42)
+    })
 })
 ```
 
@@ -97,7 +96,7 @@ Time to implement the function `getHighestNumber` inside a file we create in `hi
 
 ```typescript
 export function getHighestNumber(numbers: number[]): number {
-  return numbers[0]
+    return numbers[0]
 }
 ```
 
@@ -107,11 +106,11 @@ Now, you might think this is utterly incomplete, right? Well, _it depends_, if a
 
 ```typescript
 it('should get the highest number given an array of several numbers', () => {
-  const given = [1, 3, 2]
+    const given = [1, 3, 2]
 
-  const actual = getHighestNumber(given)
+    const actual = getHighestNumber(given)
 
-  expect(actual).toBe(3)
+    expect(actual).toBe(3)
 })
 ```
 
@@ -121,15 +120,15 @@ Because we have the previous test, whenever we change the functionality we shoul
 
 ```typescript
 export function getHighestNumber(numbers: number[]): number {
-  let highestNumber = numbers[0]
+    let highestNumber = numbers[0]
 
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] > highestNumber) {
-      highestNumber = numbers[i]
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] > highestNumber) {
+            highestNumber = numbers[i]
+        }
     }
-  }
 
-  return highestNumber
+    return highestNumber
 }
 ```
 
@@ -137,7 +136,7 @@ Great! Time to commit again. However, we can always improve our code without cha
 
 ```typescript
 export function getHighestNumber(numbers: number[]): number {
-  return numbers.slice().sort()[numbers.length - 1]
+    return numbers.slice().sort()[numbers.length - 1]
 }
 ```
 
