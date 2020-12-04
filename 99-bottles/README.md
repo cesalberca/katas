@@ -1,6 +1,6 @@
 # 99 bottles
 
-Make a program that given a verse return that verse. It can also sing from a given verse down to another given verse. It can also sing from a given verse down to verse 0.
+Make a program that given a verse return that verse. It can also sing from a given verse down to another given verse. It can also sing from a given verse down to verse 0 or sing it completely.
 
 The song is as follows:
 
