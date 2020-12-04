@@ -1,4 +1,4 @@
-import { getEvenNumbers } from './filter-even-numbers'
+import { getEvenNumbers } from './forof.filter-even-numbers'
 
 describe('filterEvenNumbers', () => {
   it('should filter the even numbers', () => {
