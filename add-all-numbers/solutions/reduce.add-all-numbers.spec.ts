@@ -1,4 +1,4 @@
-import { getTotal } from './add-all-numbers'
+import { getTotal } from './reduce.add-all-numbers'
 
 describe('addAllNumbers', () => {
   it('should add all the numbers', () => {
