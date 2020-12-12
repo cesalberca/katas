@@ -1,4 +1,4 @@
-import { fruitCounter } from './fruit-counter'
+import { fruitCounter } from './reduce.fruit-counter'
 
 describe('fruitCounter', () => {
   it('should return a count of all repeated elements', () => {
