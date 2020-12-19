@@ -9,6 +9,14 @@ Given a number of rows render a tree with that many rows. For example, given 3 r
   |
 ```
 
+```
+   *
+  ***
+ *****
+*******
+   |
+```
+
 Given 5 rows it should render the following:
 
 ```
