@@ -1,6 +1,6 @@
 import { ChristmasTree } from './christmas-tree'
 
-describe('ChristmasTree', () => {
+describe.skip('ChristmasTree', () => {
   it('should render a tree with 3 rows', () => {
     const christmasTree = new ChristmasTree()
 
