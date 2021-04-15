@@ -14,20 +14,21 @@
   "author": "César Alberca <cesalberca@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "7.12.7",
-    "@babel/plugin-proposal-class-properties": "7.12.1",
-    "@babel/plugin-proposal-private-methods": "7.12.1",
-    "@babel/preset-env": "7.12.7",
-    "@babel/preset-typescript": "7.12.7",
-    "@types/jest": "26.0.15",
+    "@babel/core": "7.13.15",
+    "@babel/plugin-proposal-class-properties": "7.13.0",
+    "@babel/plugin-proposal-private-methods": "7.13.0",
+    "@babel/preset-env": "7.13.15",
+    "@babel/preset-typescript": "7.13.0",
+    "@types/jest": "26.0.22",
     "babel-jest": "26.6.3",
-    "doctoc": "1.4.0",
+    "doctoc": "2.0.0",
     "husky": "4.3.0",
     "jest": "26.6.3",
-    "lint-staged": "10.5.1",
+    "lint-staged": "10.5.4",
     "make-coverage-badge": "1.2.0",
-    "prettier": "2.2.0",
-    "typescript": "4.1.2"
+    "prettier": "2.2.1",
+    "ts-mockito": "2.6.1",
+    "typescript": "4.2.4"
   },
   "husky": {
     "hooks": {

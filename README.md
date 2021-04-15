@@ -13,7 +13,7 @@
 
 -   [Introduction](#introduction)
 -   [Katas](#katas)
--   [Development](#development)
+-   [Setup](#setup)
 -   [Workflow](#workflow)
 -   [Contributing](#contributing)
 
