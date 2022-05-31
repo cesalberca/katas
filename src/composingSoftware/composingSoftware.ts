@@ -77,3 +77,20 @@ const addNumber = (num1: number) => (num2: number) => num1 + num2;
 export const incBy1 = addNumber(1);
 
 export const incBy20 = addNumber(20);
+
+// Monads
+
+const composeM =
+  (flatMap: string) =>
+  (...ms: any[]) =>
+    ms.reduce((f, g) => (x: any) => g(x)[flatMap](f));
+
+const composePromises = composeM("then");
+
+const getUserbyId = (id: number) =>
+  id === 3 ? Promise.resolve({ name: "Kurt", role: "Author" }) : undefined;
+
+const hasPermisson = ({ role }: { name: string; role: string }) =>
+  Promise.resolve(role === "Author");
+
+export const authUser = composePromises(hasPermisson, getUserbyId);

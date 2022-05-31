@@ -13,6 +13,7 @@ import {
   compose,
   trace,
   pipe,
+  authUser,
 } from "./composingSoftware";
 
 describe("currying", () => {
@@ -80,6 +81,12 @@ describe("function composition", () => {
   describe("pipe", () => {
     it("should double numbers and then increment it", () => {
       expect(pipe(double, inc)(6)).toBe(13);
+    });
+  });
+
+  describe("compose Promises", () => {
+    it("should authorize the user", async () => {
+      expect(await authUser(3)).toBe(true);
     });
   });
 });
