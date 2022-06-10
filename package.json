@@ -27,6 +27,7 @@
     "lint-staged": "12.3.3",
     "make-coverage-badge": "1.2.0",
     "prettier": "2.5.1",
+    "ramda": "^0.28.0",
     "ts-mockito": "2.6.1",
     "typescript": "4.5.5"
   },

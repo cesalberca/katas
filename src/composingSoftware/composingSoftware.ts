@@ -94,3 +94,113 @@ const hasPermisson = ({ role }: { name: string; role: string }) =>
   Promise.resolve(role === "Author");
 
 export const authUser = composePromises(hasPermisson, getUserbyId);
+
+// factory function ofr mixin composition
+
+const withConstructor = (constuctor: any) => (o: any) => ({
+  __proto__: {
+    constuctor,
+  },
+  ...o,
+});
+
+const withFlying = (o: any) => {
+  let isFlying = false;
+
+  return {
+    ...o,
+    fly() {
+      isFlying = true;
+      return this;
+    },
+    land() {
+      isFlying = false;
+      return this;
+    },
+    isFlying: () => isFlying,
+  };
+};
+
+const withDriving = (o: any) => {
+  let speed = 0;
+
+  return {
+    ...o,
+    accelarate(km: number) {
+      speed = speed + km;
+      return this;
+    },
+
+    break(km: number) {
+      speed = speed - km < 0 ? 0 : speed - km;
+      return this;
+    },
+    getSpeed: () => speed,
+  };
+};
+
+const withBattery =
+  ({ capacity }: { capacity: string }) =>
+  (o: any) => {
+    let percentCharge = 100;
+    return {
+      ...o,
+      getCapacity() {
+        return capacity;
+      },
+      draw(percent: number) {
+        percentCharge = percentCharge - percent;
+        return this;
+      },
+      getCharge: () => percentCharge,
+    };
+  };
+
+const createDrone = ({ capacity = "3000mAh" }) =>
+  pipe(withFlying, withBattery({ capacity }), withConstructor(createDrone))({});
+
+export const myDrone = createDrone({ capacity: "5500mAh" });
+
+export const createRobot = ({ capacity = "600mAh" }) =>
+  pipe(
+    withBattery({ capacity }),
+    withDriving,
+    withConstructor(createRobot)
+  )({});
+
+// Lens
+
+export const view = (lens: any, store: any) => lens.view(store);
+export const set = (lens: any, value: any, store: any) =>
+  lens.set(value, store);
+
+export const over = (lens: any, fn: any, store: any) => lens.over(fn, store);
+
+export const lensProp = (prop: any) => ({
+  view: (store: any) => store[prop],
+  set: (value: any, store: any) => ({
+    ...store,
+    [prop]: value,
+  }),
+  over: (fn: any, store: any) => ({
+    ...store,
+    [prop]: fn(store[prop]),
+  }),
+});
+
+// Transducers
+
+interface Friends {
+  id: number;
+  name: string;
+  nearMe: boolean;
+}
+
+const isNearMe = (arr: Friends[]): Friends[] =>
+  arr.filter(({ nearMe }: Friends) => nearMe);
+
+const getName = (arr: Friends[]): string[] => arr.map(({ name }) => name);
+
+export const getFriendsNearMe = pipe(isNearMe, getName);
+
+export const toArray = (tranducer: any, arr: any) => tranducer(arr);
