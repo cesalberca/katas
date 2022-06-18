@@ -27,8 +27,8 @@ const numberOfLength2AndSupTo13 =
         isZero(num, 1) ? "" : words[cutTheLastPart(num, 1)]
       }`;
 
-    return `${words[+num.toString().slice(1)]}${
-      +num.toString().slice(1) === 8 ? "een" : "teen"
+    return `${words[cutTheLastPart(num, 1)]}${
+      cutTheLastPart(num, 1) === 8 ? "een" : "teen"
     }`;
   };
 
