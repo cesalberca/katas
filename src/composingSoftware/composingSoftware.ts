@@ -204,3 +204,18 @@ const getName = (arr: Friends[]): string[] => arr.map(({ name }) => name);
 export const getFriendsNearMe = pipe(isNearMe, getName);
 
 export const toArray = (tranducer: any, arr: any) => tranducer(arr);
+
+const trampoline =
+  (fn: any) =>
+  (...args: any) => {
+    let result: any = fn(...args);
+    while (typeof result === "function") {
+      result = result();
+    }
+    return result;
+  };
+
+const sumBelow = trampoline(
+  (number: number, sum = 0): (() => number) | number =>
+    number === 0 ? sum : () => sumBelow(number - 1, sum + number)
+);
