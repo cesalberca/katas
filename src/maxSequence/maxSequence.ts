@@ -1,8 +1,3 @@
-interface Saver {
-  num: number;
-  arr: number[];
-}
-
 export const maxSequence = function (arr: number[]): any {
   let maxGlobal = arr[0] || 0;
   let curr = maxGlobal;
