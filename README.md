@@ -29,24 +29,24 @@ I recommend that you create a file with `<NAME>.<KATA>.ts` and `<NAME>.<KATA>.sp
 
 You can tackle the Katas in whatever order you may choose. The order specified here has more to do with difficulty of the Kata.
 
--   [Highest number](highest-number/README.md)
--   [Power of two](power-of-two/README.md)
--   [Add all numbers](add-all-numbers/README.md)
--   [Fizz buzz](fizz-buzz/README.md)
--   [forEach](for-each/README.md)
--   [Filter even numbers](filter-even-numbers/README.md)
--   [Flat](flat/README.md)
--   [Alphabetical](alphabetical/README.md)
--   [Fruit counter](fruit-counter/README.md)
--   [Grouper](grouper/README.md)
--   [Range](range/README.md)
--   [Calculator](calculator/README.md)
--   [Prime numbers](prime-numbers/README.md)
--   [Caesar's cypher](caesar/README.md)
--   [Change calculator](change-calculator/README.md)
--   [Christmas tree](christmas-tree/README.md)
--   [Word wrap](word-wrap/README.md)
--   [99 bottles](99-bottles/README.md)
+-   [Highest number](src/highest-number/README.md)
+-   [Power of two](src/power-of-two/README.md)
+-   [Add all numbers](src/add-all-numbers/README.md)
+-   [Fizz buzz](src/fizz-buzz/README.md)
+-   [forEach](src/for-each/README.md)
+-   [Filter even numbers](src/filter-even-numbers/README.md)
+-   [Flat](src/flat/README.md)
+-   [Alphabetical](src/alphabetical/README.md)
+-   [Fruit counter](src/fruit-counter/README.md)
+-   [Grouper](src/grouper/README.md)
+-   [Range](src/range/README.md)
+-   [Calculator](src/calculator/README.md)
+-   [Prime numbers](src/prime-numbers/README.md)
+-   [Caesar's cypher](src/caesar/README.md)
+-   [Change calculator](src/change-calculator/README.md)
+-   [Christmas tree](src/christmas-tree/README.md)
+-   [Word wrap](src/word-wrap/README.md)
+-   [99 bottles](src/99-bottles/README.md)
 
 ## Setup
 
@@ -81,7 +81,7 @@ Notice that there isn't even an `actual` symbol declared. Thinking about the `ex
 Now let's finish the test:
 
 ```typescript
-import { getHighestNumber } from './highest-number'
+import { getHighestNumber } from './src/highest-number'
 
 describe('getHighestNumber', () => {
     it('should get the highest number given an array of one number', () => {
