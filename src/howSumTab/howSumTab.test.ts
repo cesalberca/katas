@@ -1,4 +1,4 @@
-import { howSumTab } from "./howSumTab";
+import { howSumTab } from "./howSumtab";
 
 describe("howSumTab", () => {
   it("should be an empty array for when the target is zero", () => {
