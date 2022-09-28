@@ -95,7 +95,7 @@ const hasPermisson = ({ role }: { name: string; role: string }) =>
 
 export const authUser = composePromises(hasPermisson, getUserbyId);
 
-// factory function ofr mixin composition
+// factory function ofer mixin composition
 
 const withConstructor = (constuctor: any) => (o: any) => ({
   __proto__: {
@@ -196,8 +196,8 @@ interface Friends {
   nearMe: boolean;
 }
 
-const isNearMe = (arr: Friends[]): Friends[] =>
-  arr.filter(({ nearMe }: Friends) => nearMe);
+const isNearMe = (friends: Friends[]): Friends[] =>
+  friends.filter(({ nearMe }: Friends) => nearMe);
 
 const getName = (arr: Friends[]): string[] => arr.map(({ name }) => name);
 
