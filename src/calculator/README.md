@@ -4,5 +4,5 @@ Create a calculator that can handle sum and subtraction operations. This calcula
 
 -   "1 + 1" = 2
 -   "1 - 1" = 0
--   "4 + 2 + 1 + 3" = 11
+-   "4 + 2 + 1 + 3" = 10
 -   "4 - 2 + 1" = 3
