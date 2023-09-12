@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest'
 import { ChristmasTree } from './christmas-tree'
 
 describe.skip('ChristmasTree', () => {

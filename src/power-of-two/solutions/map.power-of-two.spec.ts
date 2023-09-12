@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest'
 import { getPoweredByTwo } from './map.power-of-two'
 
 describe('getPoweredByTwo', () => {

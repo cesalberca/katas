@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest'
 import { getPoweredByTwo } from './fori.power-of-two'
 
 describe('getPoweredByTwo', () => {

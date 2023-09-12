@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest'
 import { WordWrapper } from './word-wrap'
 
 describe('WordWrapper', () => {

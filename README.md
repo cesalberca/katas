@@ -1,10 +1,8 @@
 <h1 align="center">Katas</h1>
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/cesalberca/katas/CI)
-![David](https://img.shields.io/david/dev/cesalberca/katas)
 ![GitHub](https://img.shields.io/github/license/cesalberca/katas)
-![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)
-![Coverage](coverage-badge.svg)
+![Star](https://img.shields.io/github/stars/cesalberca/katas.svg)
+![Followers](https://img.shields.io/github/followers/cesalberca.svg?style=social&label=Follow&maxAge=2592000)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->

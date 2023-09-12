@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest'
 import { getHighestNumber } from './forof.highest-number'
 
 describe('getHighestNumber', () => {

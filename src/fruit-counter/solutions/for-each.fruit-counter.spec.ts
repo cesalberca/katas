@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest'
 import { fruitCounter } from './for-each.fruit-counter'
 
 describe('fruitCounter', () => {

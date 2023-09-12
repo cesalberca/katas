@@ -1,3 +1,4 @@
+import { describe, it, expect, beforeEach } from 'vitest'
 import { BeerSong } from './beer-song'
 
 describe('BeerSong', () => {

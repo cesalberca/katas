@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest'
 import { getTotal } from './forof.add-all-numbers'
 
 describe('forof.addAllNumbers', () => {

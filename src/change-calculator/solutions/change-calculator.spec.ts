@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest'
 import { ChangeCalculator } from './change-calculator'
 
 describe('bank', () => {

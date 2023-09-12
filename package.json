@@ -1,34 +1,29 @@
 {
   "name": "katas",
-  "version": "1.0.0",
+  "private": true,
+  "version": "1.1.0",
   "description": "Katas",
   "repository": "https://github.com/cesalberca/katas",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watchAll",
-    "coverage": "jest --coverage && make-coverage-badge --output-path coverage-badge.svg",
-    "format": "prettier --write .",
-    "toc": "doctoc README.md --github --title \"**Table of Contents**\""
+    "test": "vitest --watch=false",
+    "test:watch": "vitest --watch=true",
+    "format": "prettier --write --ignore-path .gitignore .",
+    "toc": "doctoc README.md --github --title \"**Table of Contents**\"",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "César Alberca <cesalberca@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "7.17.0",
-    "@babel/plugin-proposal-class-properties": "7.16.7",
-    "@babel/plugin-proposal-private-methods": "7.16.11",
-    "@babel/preset-env": "7.16.11",
-    "@babel/preset-typescript": "7.16.7",
-    "@types/jest": "27.4.0",
-    "babel-jest": "27.5.1",
-    "doctoc": "2.1.0",
-    "husky": "4.3.0",
-    "jest": "27.5.1",
-    "lint-staged": "12.3.3",
+    "@vitest/coverage-v8": "^0.34.4",
+    "doctoc": "2.2.1",
+    "husky": "8.0.3",
+    "lint-staged": "14.0.1",
     "make-coverage-badge": "1.2.0",
-    "prettier": "2.5.1",
+    "prettier": "3.0.3",
     "ts-mockito": "2.6.1",
-    "typescript": "4.5.5"
+    "typescript": "5.2.2",
+    "vitest": "0.34.4"
   },
   "husky": {
     "hooks": {
@@ -37,5 +32,8 @@
   },
   "lint-staged": {
     "*.{ts,css,md}": "prettier --write"
+  },
+  "volta": {
+    "node": "18.17.1"
   }
 }

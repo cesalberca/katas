@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest'
 import { PrimeNumbersFactorer } from './prime-numbers'
 
 describe('PrimeNumbersFactorer', () => {
