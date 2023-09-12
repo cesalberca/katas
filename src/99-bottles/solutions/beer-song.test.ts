@@ -17,7 +17,7 @@ describe('BeerSong', () => {
     expect(actual).toEqual(expected)
   })
 
-  it('prints an arbitrary verse', () => {
+  it('prints another arbitrary verse', () => {
     const expected =
       '42 bottles of beer on the wall, 42 bottles of beer.\nTake one down and pass it around, 41 bottles of beer on the wall.\n'
 
