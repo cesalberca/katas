@@ -23,7 +23,7 @@ JavaScript/TypeScript Katas you can use to hone your skills as a developer! Try 
 
 ## Katas
 
-I recommend that you create a file with `<NAME>.<KATA>.ts` and `<NAME>.<KATA>.spec.ts` for the test, where `<NAME>` is the main characteristic of the Kata and `<NAME>` is the name of the Kata. Only if you find yourself stuck you might check the answer.
+I recommend that you create a file with `<NAME>.<KATA>.ts` and `<NAME>.<KATA>.spec.ts` for the test, where `<NAME>` is the main characteristic of the Kata and `<KATA>` is the name of the Kata. Only if you find yourself stuck you might check the answer.
 
 You can tackle the Katas in whatever order you may choose. The order specified here has more to do with difficulty of the Kata.
 
