@@ -16,7 +16,7 @@ export class ChristmasTree {
     const finalTree = treeArr
       .map((x, i) => {
         const paddedSpaces = Math.floor(maxStarsPerRow / 2) + i * -1
-        return x.padStart(paddedSpaces).padEnd(paddedSpaces)
+        return x.padStart(maxStarsPerRow - paddedSpaces)
       })
       .join('\n')
 
@@ -30,6 +30,7 @@ export class ChristmasTree {
       const isHalf = i === half
       if (isHalf) {
         lastRow += '|'
+        break
       } else {
         lastRow += ' '
       }
