@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { ChristmasTree } from './christmas-tree'
 
-describe.skip('ChristmasTree', () => {
+describe('ChristmasTree', () => {
   it('should render a tree with 3 rows', () => {
     const christmasTree = new ChristmasTree()
 
