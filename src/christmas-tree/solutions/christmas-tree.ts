@@ -1,6 +1,6 @@
 export class ChristmasTree {
   render(rows: number): string {
-    let maxStarsPerRow = rows + rows - 1
+    const maxStarsPerRow = rows + rows - 1
 
     const treeArr: string[] = []
 

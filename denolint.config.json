@@ -1,0 +1,7 @@
+{
+  "include": ["src/"],
+  "ignore": ["dist/", "node_modules/"],
+  "rules": {
+    "tags": ["recommended"]
+  }
+}
