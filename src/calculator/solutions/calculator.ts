@@ -10,7 +10,7 @@ export class Calculator {
     let signedStringifiedNumber = ''
     const sequence = []
 
-    for (let char of string) {
+    for (const char of string) {
       const isSignFound = ['+', '-'].includes(char)
       if (isSignFound) {
         sequence.push(signedStringifiedNumber)
