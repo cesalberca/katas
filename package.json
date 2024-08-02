@@ -9,7 +9,7 @@
     "test:watch": "vitest --watch=true",
     "format": "prettier --write --ignore-path .gitignore .",
     "toc": "doctoc README.md --github --title \"**Table of Contents**\"",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "César Alberca <cesalberca@gmail.com>",
@@ -17,18 +17,13 @@
   "devDependencies": {
     "@vitest/coverage-v8": "^2.0.5",
     "doctoc": "2.2.1",
-    "husky": "8.0.3",
+    "husky": "^9.1.4",
     "lint-staged": "^15.2.7",
     "make-coverage-badge": "1.2.0",
     "prettier": "3.0.3",
     "ts-mockito": "2.6.1",
     "typescript": "5.2.2",
     "vitest": "^2.0.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.{ts,css,md}": "prettier --write"
